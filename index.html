@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>STRING SPLIT</title>
+</head>
+<body>
+
+  <h1>Spliting A String</h1>
+  Enter The String: <input type="text" id="userString" size="60" name="uString"><br>
+  <button onclick="SplitFunction()">Split The String</button>
+  <p id="SplitedStr"></p>;
+
+<script>
+function SplitFunction() {
+    /*var str = document.getElementById("userString").value;
+    var result = str.split(" ");
+    for (var i in result) {
+    document.write(result[i]);
+    document.write("<br/>"); */
+    var str= document.getElementById("userString").value;
+    var string = str.split(" ");
+    for(i in string){
+      document.getElementById("SplitedStr").innerHTML += string[i] + "<br/>";
+    }
+  }
+
+</script>
+</body>
+</html>
